@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/reset_action"
+        android:title="@string/reset"
+        app:showAsAction= "ifRoom"/>
+
+    <!-- Specify for overflow items-->
+    <item
+        android:id="@+id/overflow_default"
+        android:title="@string/overflow"
+        app:showAsAction="never" />
+
+    <!--Adds spinner item to the menu-->
+    <item
+        android:id="@+id/color_spinner"
+        android:title="@string/colors_label"
+        app:showAsAction = "ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.Spinner"/>
+
+    <item
+        android:id="@+id/change_letters"
+        android:title="@string/change_letters"
+        app:showAsAction = "ifRoom"/>
+
+</menu>

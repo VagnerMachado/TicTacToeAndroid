@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#528cbc"
+    tools:context="edu.ncc.machado.tictactoe2.MainActivity">
+
+    <TextView
+        android:text="@string/game"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:textColor="#0e0f0f"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120sp"/>
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button1"
+        android:textSize="35sp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"/>
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button2"
+        android:textSize="35sp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60sp"/>
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button3"
+        android:textSize="35sp"
+        android:layout_toRightOf="@id/button2"
+        android:layout_alignTop="@id/button2"
+        android:layout_below="@id/textView"/>
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button4"
+        android:textSize="35sp"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_alignTop="@id/button5"
+        android:layout_toLeftOf="@id/button5"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button5"
+        android:textSize="35sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button2"
+       />
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button6"
+        android:textSize="35sp"
+        android:layout_alignTop="@id/button5"
+        android:layout_toRightOf="@id/button5"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button7"
+        android:textSize="35sp"
+        android:layout_below="@+id/button4"
+       android:layout_alignLeft="@id/button4"
+        android:layout_toStartOf="@+id/button8"
+        android:layout_toLeftOf="@+id/button8" />
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button8"
+        android:textSize="35sp"
+        android:layout_alignTop="@id/button7"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:backgroundTint="#FFD3E2EE"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:id="@+id/button9"
+        android:textSize="35sp"
+        android:layout_alignTop="@id/button8"
+        android:layout_toRightOf="@id/button8" />
+
+    <android.support.v7.widget.Toolbar
+        android:backgroundTint="#FFD3E2EE"
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

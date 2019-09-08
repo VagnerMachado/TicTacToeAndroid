@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0sp"
+    android:paddingLeft="0sp"
+    android:paddingRight="0sp"
+    android:paddingTop="0sp"
+    tools:context="edu.ncc.machado.tictactoe2.FirstPage"
+    android:background="#528cbc">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/initial_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="20dp"
+        android:backgroundTint="#FFD3E2EE"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="#FFD3E2EE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lets_go"
+        android:id="@+id/button_go"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/who_plays"
+        android:id="@+id/name_request"
+        android:textStyle="bold|italic"
+        android:textSize="30dp"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:fontFamily="serif"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player1"
+        android:id="@+id/player_1_txt"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/editText2"
+        android:textSize="25sp"
+        android:paddingLeft="10sp"/>
+
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:fontFamily="serif"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player2"
+        android:id="@+id/player_2_txt"
+        android:layout_marginBottom="38dp"
+        android:textSize="25sp"
+        android:paddingLeft="10sp"
+        android:layout_above="@+id/button_go"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20sp"
+        android:textSize="25dp"
+        android:id="@+id/editText1"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:enabled="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:windowSoftInputMode="stateHidden"
+        android:inputType="text"
+        android:lines="1"
+        android:layout_alignBottom="@+id/player_1_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:textSize="25dp"
+        android:id="@+id/editText2"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:focusable="true"
+        android:enabled="true"
+        android:windowSoftInputMode="stateHidden"
+        android:clickable="true"
+        android:inputType="text"
+        android:lines="1"
+        android:layout_alignBottom="@+id/player_2_txt"
+        android:layout_toRightOf="@+id/player_2_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="game">Vagner\'s App</string>
+    <string name="reset">Reset</string>
+    <string name="win">We have a Winner!</string>
+    <string name="already_reset">Already Reset!</string>
+    <string name="win_o">Good job, you won </string>
+    <string name="win_x">Good job, you won </string>
+    <string name="tie">It\'s a tie. Let\'s try again!?</string>
+    <string name="overflow">About</string>
+    <string name="colors_label">Colors</string>
+    <string name="x_o">X and O</string>
+    <string name="p_q">P and Q</string>
+    <string name="y_z">Y and Z</string>
+    <string name="change_letters">Change Letters</string>
+    <string name="who_plays">Who is playing?</string>
+    <string name="player1">Player 1:</string>
+    <string name="lets_go">Let\'s Go!</string>
+    <string name="player2">Player 2:</string>
+    <string name="no_name">Please enter the players\' names!</string>
+    <string name="about_info">This is Vagner\'s Tic Tac Toe App\n
+        Player 1 gets to play first with the symbol \'X\'.\n
+        Player 2 gets the second move with the \'0\' symbol.
+        </string>
+    <string name="welcome">Welcome</string>
+    <!--Array for the Spinner colors-->
+    <string-array name="colors_array">
+        <item>PICK A COLOR:</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+    </string-array>
+</resources>
